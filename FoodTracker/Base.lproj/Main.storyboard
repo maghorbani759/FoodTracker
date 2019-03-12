@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8d6-Pz-f3X">
-                                <rect key="frame" x="16" y="40" width="343" height="96.5"/>
+                                <rect key="frame" x="16" y="40" width="343" height="424.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4M-QA-qOb">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -43,6 +43,12 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbc-uL-FHK"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-Yg-We4">
+                                        <rect key="frame" x="0.0" y="104.5" width="320" height="320"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4Pr-Yg-We4" secondAttribute="height" multiplier="1:1" id="gsN-JR-tYA"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="M1D-gp-lYG" secondAttribute="trailing" id="a6o-0B-YH7"/>
@@ -59,6 +65,7 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="t4M-QA-qOb" id="enQ-6v-7bQ"/>
                         <outlet property="nameTextField" destination="M1D-gp-lYG" id="7IB-5e-70d"/>
+                        <outlet property="photoImageView" destination="4Pr-Yg-We4" id="psG-6g-AAR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,4 +73,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="1080" height="1080"/>
+    </resources>
 </document>
